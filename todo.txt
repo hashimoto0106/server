@@ -1,0 +1,23 @@
+
+[自宅でしたいこと]
+・ホスト名で通信アクセス
+・スマホデータのクラウド利用
+・raspberry piからNASファイルアクセス
+・macからgit管理
+
+[外出先（会社、図書館、カフェ、ホテルetc）からしたいこと]
+・NAS/raspberry piへssh接続
+・Project HPアクセス
+・Redmin(Win10)へアクセス
+・sshにてraspberry piからNASファイルアクセス
+・Baseball APP HPアクセス（raspberry pi上で動作）
+・VPN通信
+・nasneリアルタイム視聴、録画視聴、録画予約
+・macからgit管理
+・raspberry piへのリモートデスクトップ
+
+[完了]
+・DDNSを利用し、DSMアクセスへし、NAS設定、ファイル操作等（ファイル参照・編集は不可）
+・QuickConnectを利用し、DSMアクセスへし、NAS設定、ファイル操作等（ファイル参照・編集は不可）
+・スマホからNASファイルアクセス（参照）
+・Win10へのリモートデスクトップ
