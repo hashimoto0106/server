@@ -1,0 +1,9 @@
+mount -t nfs redmagic:/volume1/Software /mnt/synology/Software
+
+
+vi /etc/fstab
+redmagic:/volume1/Software /mnt/synology/Software    nfs defaults,_netdev 0 0
+
+
+jetson nano
+/etc/rc.localにmountコマンド追加（fstabでは効かなかったため）

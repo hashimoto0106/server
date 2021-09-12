@@ -1,12 +1,15 @@
 
 [自宅でしたいこと]
-・[完了]ホスト名で通信アクセス
 ・スマホデータのクラウド利用
-・raspberry piからNASファイルアクセス
 ・macからgit管理
 ・syslog集約
 ・raspberry pi復旧
+・Redmine移行
+・サーバログ解析
+・スーパーコンピュータ構築
 ・[完了]NASへのssh接続
+・[完了]ホスト名で通信アクセス
+・[完了]raspberry pi/jetson nanoからNASファイルアクセス
 
 [外出先（会社、図書館、カフェ、ホテルetc）からしたいこと]
 ・NAS/raspberry piへssh接続
