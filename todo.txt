@@ -1,9 +1,12 @@
 
 [自宅でしたいこと]
+・raspberry pi復旧
+・IP 192.168.0.1**統一
+・イメージバックアップ
+・synology DNSサーバ
 ・スマホデータのクラウド利用
 ・macからgit管理
 ・syslog集約
-・raspberry pi復旧
 ・Redmine移行
 ・サーバログ解析
 ・スーパーコンピュータ構築
@@ -11,11 +14,12 @@
 ・[完了]ホスト名で通信アクセス
 ・[完了]raspberry pi/jetson nanoからNASファイルアクセス
 
+
 [外出先（会社、図書館、カフェ、ホテルetc）からしたいこと]
 ・NAS/raspberry piへssh接続
+・sshにてraspberry piからNASファイルアクセス
 ・Project HPアクセス
 ・Redmin(Win10)へアクセス
-・sshにてraspberry piからNASファイルアクセス
 ・Baseball APP HPアクセス（raspberry pi上で動作）
 ・VPN通信
 ・nasneリアルタイム視聴、録画視聴、録画予約
