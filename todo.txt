@@ -2,17 +2,24 @@
 [自宅でしたいこと]
 ・raspberry pi復旧
 ・IP 192.168.0.1**統一
+    192.168.0.100	win10
+    192.168.0.101	redmagic
+    192.168.0.102	TestServer
+    192.168.0.103	LogServer
+    192.168.0.104	AI-Server
 ・イメージバックアップ
 ・synology DNSサーバ
 ・スマホデータのクラウド利用
 ・macからgit管理
-・syslog集約
+・syslog server(集約)
 ・Redmine移行
 ・サーバログ解析
 ・スーパーコンピュータ構築
 ・[完了]NASへのssh接続
 ・[完了]ホスト名で通信アクセス
 ・[完了]raspberry pi/jetson nanoからNASファイルアクセス
+・[完了]ping hashimoto0106.synology.me -> 失敗
+・[完了]ping 106.168.51.128 (外部ネットワーク - DDNS) -> 失敗
 
 
 [外出先（会社、図書館、カフェ、ホテルetc）からしたいこと]
