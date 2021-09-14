@@ -2,10 +2,10 @@
 [自宅でしたいこと]
 ・raspberry pi復旧
 ・IP 192.168.0.1**統一
-    192.168.0.100	win10
-    192.168.0.101	redmagic
+    [完了]192.168.0.100	win10
+    [完了]192.168.0.101	redmagic
     192.168.0.102	TestServer
-    192.168.0.103	LogServer
+    [完了]192.168.0.103	LogServer
     192.168.0.104	AI-Server
 ・イメージバックアップ
 ・synology DNSサーバ
