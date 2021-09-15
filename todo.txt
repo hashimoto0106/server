@@ -6,7 +6,7 @@
     [完了]192.168.0.101	redmagic
     192.168.0.102	TestServer
     [完了]192.168.0.103	LogServer
-    192.168.0.104	AI-Server
+    [完了]192.168.0.104	AI-Server
 ・イメージバックアップ
 ・synology DNSサーバ
 ・スマホデータのクラウド利用
