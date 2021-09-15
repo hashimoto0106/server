@@ -9,6 +9,7 @@
     [完了]192.168.0.104	AI-Server
 ・イメージバックアップ
 ・synology DNSサーバ
+・Docker
 ・スマホデータのクラウド利用
 ・macからgit管理
 ・syslog server(集約)
@@ -23,15 +24,14 @@
 
 
 [外出先（会社、図書館、カフェ、ホテルetc）からしたいこと]
-・ping hashimoto0106.synology.me -> 失敗
-・ping 106.168.51.128 (外部ネットワーク - DDNS) -> 失敗
 ・macからgit管理
 ・Redmin(Win10)へアクセス
 ・Baseball APP HPアクセス（raspberry pi上で動作）
 ・nasneリアルタイム視聴、録画視聴、録画予約
 ・macからgit管理
-・raspberry piへのリモートデスクトップ
-・JupyterNotebookでAI作業
+・LogServer,AI-Serverへのリモートデスクトップ
+・ping hashimoto0106.synology.me -> 失敗
+・ping 106.168.51.128 (外部ネットワーク - DDNS) -> 失敗
 ・[完了]DDNSを利用し、DSMアクセスへし、NAS設定、ファイル操作等（ファイル参照・編集は不可）
 ・[完了]QuickConnectを利用し、DSMアクセスへし、NAS設定、ファイル操作等（ファイル参照・編集は不可）
 ・[完了]スマホからNASファイルアクセス（参照）
@@ -40,3 +40,4 @@
 ・[完了]NAS/raspberry piへssh接続
 ・[完了]sshにてraspberry piからNASファイルアクセス
 ・[完了]Project HPアクセス
+・[完了]JupyterNotebookでAI作業
