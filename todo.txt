@@ -23,12 +23,9 @@
 
 
 [外出先（会社、図書館、カフェ、ホテルetc）からしたいこと]
-・VPN通信
 ・ping hashimoto0106.synology.me -> 失敗
 ・ping 106.168.51.128 (外部ネットワーク - DDNS) -> 失敗
-・NAS/raspberry piへssh接続
-・sshにてraspberry piからNASファイルアクセス
-・Project HPアクセス
+・macからgit管理
 ・Redmin(Win10)へアクセス
 ・Baseball APP HPアクセス（raspberry pi上で動作）
 ・nasneリアルタイム視聴、録画視聴、録画予約
@@ -39,3 +36,7 @@
 ・[完了]QuickConnectを利用し、DSMアクセスへし、NAS設定、ファイル操作等（ファイル参照・編集は不可）
 ・[完了]スマホからNASファイルアクセス（参照）
 ・[完了]Win10へのリモートデスクトップ
+・[完了]VPN通信
+・[完了]NAS/raspberry piへssh接続
+・[完了]sshにてraspberry piからNASファイルアクセス
+・[完了]Project HPアクセス
