@@ -7,3 +7,13 @@ redmagic:/volume1/Software /mnt/synology/Software    nfs defaults,_netdev 0 0
 
 jetson nano
 /etc/rc.localにmountコマンド追加（fstabでは効かなかったため）
+  1 #!/bin/sh -e
+  2        
+  3 sleep 5                                                                                                                                                   
+  4 #sudo mount -t nfs redmagic:/volume1/Software /mnt/synology/Software
+  5 #sudo mount -t nfs 192.168.0.101:/volume1/Software /mnt/synology/Software
+  6 mount -a
+  7 #su control
+  8 #/home/control/start_jupyter.sh &
+  9        
+ 10 exit 0 

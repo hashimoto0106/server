@@ -2,8 +2,10 @@
 [自宅でしたいこと]
 ・raspberry pi復旧
 ・IP 192.168.0.1**統一 192.168.0.102	TestServer
-・イメージバックアップ
+・イメージバックアップ自動化
+・USB HDD データサーバ化
 ・synology DNSサーバ
+・Jupyter Notebookカスタム
 ・database構築
 ・スマホデータのクラウド利用
 ・macからgit管理
