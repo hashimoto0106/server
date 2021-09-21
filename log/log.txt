@@ -1,0 +1,6 @@
+
+受信中のログ | ログ センター - Synology ナレッジセンターを参考にsyslogサーバ設定する
+raspberry piのsyslog送信先設定を変更する
+synology serverにてログ受信を確認する
+sshにてログファイル確認・解析
+不正アクセス時の通知設定
