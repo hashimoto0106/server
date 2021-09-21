@@ -1,0 +1,24 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+192.168.0.100	win10
+192.168.0.101	redmagic
+192.168.0.102	TestServer
+192.168.0.103	LogServer
+192.168.0.104	AI-Server
+255.255.255.255	broadcasthost
+::1             localhost
+
+
+
+
+https://kenken92.synology.me/wordpress/synology/1681.html
+
+
+なぜredmagicは設定しただけで、win10が認識したのか
+各マシンのホスト名を設定したら/etc/hostsのような定義は不要にできるのではないか
+
