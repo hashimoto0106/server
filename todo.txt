@@ -1,10 +1,11 @@
 [Software]
 ・cupy install
-・graphviz install
+・[完了]graphviz install
 ・awk
 ・linux shell script
 ・AI Framework App化->フォルダ準備完了
 ・Jupyter Notebookカスタム
+・Travis CI
 
 ---------------------------------------------------------------------------------------------
 
@@ -16,7 +17,7 @@
 
 [自宅でしたいこと]
 ・イメージバックアップ自動化
-・syslog server(集約)
+・syslog server(集約)bash_profile(root)
 ・nessus seccurity診断
 ・raspberry pi復旧
 ・IP 192.168.0.1**統一 192.168.0.102	TestServer
