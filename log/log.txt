@@ -57,6 +57,12 @@ drwxr-xr-x  2 root  root     4.0K  9月 20  2020 unattended-upgrades/        [sy
 ・kern.logがない
 ・service mail,cronログしか残っていない
 
+
+historylogをlogrotate対象とする
+
+
+
+-----------------log 共通化--------------------
 sudo vi ~/.bash_profile
 export NAS_LOG_PATH=/mnt/synology/Log
 export NAS_CONFIG_PATH=/mnt/synology/Computer/config
@@ -64,15 +70,16 @@ source ~/.bash_profile
 printenv
 export
 
+sudo vi /etc/rsyslog.conf
+sudo systemctl restart rsyslog
+cd /etc/logrotate.d
+sudo vi /etc/logrotate.d/*********
+sudo logrotate -fv /etc/logrotate.conf
+
+注意：/media/pi/SSD-PGU3-A/LogServer#
 
 
-historylogをlogrotate対象とする
-
-
-
--------------------------------------
-config 共通化
-
+-----------------config 共通化--------------------
 .bash_history
 .bash_logout
 .bash_profile
