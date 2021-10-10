@@ -11,4 +11,10 @@ sudo apt clean
 du -sh ~/.cache/thumbnails
 sudo rm -rf ~/.cache/thumbnails/*
 
+=============================================================================
+
+#recycle
+https://www.google.co.jp/search?q=synology+%23recycle&lr=lang_ja&hl=ja&tbs=lr%3Alang_1ja&sxsrf=AOaemvIROAdkRFjTamNsZX_3Ck2AXs5zvA%3A1633862532396&ei=hMNiYbXQF4b4-QbCnobQBg&ved=0ahUKEwi1ouue1L_zAhUGfN4KHUKPAWoQ4dUDCA4&uact=5&oq=synology+%23recycle&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEBMyBggAEB4QEzIGCAAQHhATMgYIABAeEBMyBggAEB4QEzIGCAAQHhATMgYIABAeEBMyBggAEB4QEzoECAAQQzoICAAQgAQQsQM6CAgAELEDEIMBOgsIABCABBCxAxCDAToFCAAQgAQ6BAgjECc6BwgAELEDEENKBAhBGABQhd5SWO7xUmDA81JoAHAAeACAAYoBiAHyB5IBAzYuNJgBAKABAaABAsABAQ&sclient=gws-wiz
+
+
 
