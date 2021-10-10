@@ -1,0 +1,136 @@
+
+
+
+root@LogServer:/var/log# vi /etc/ssh/ssh_config 
+Host *
+#   ForwardAgent no
+#   ForwardX11 no
+#   ForwardX11Trusted yes
+#   PasswordAuthentication yes
+#   HostbasedAuthentication no
+#   GSSAPIAuthentication no
+#   GSSAPIDelegateCredentials no
+#   GSSAPIKeyExchange no
+#   GSSAPITrustDNS no
+#   BatchMode no
+#   CheckHostIP yes
+#   AddressFamily any
+#   ConnectTimeout 0
+#   StrictHostKeyChecking ask
+#   IdentityFile ~/.ssh/id_rsa
+#   IdentityFile ~/.ssh/id_dsa
+#   IdentityFile ~/.ssh/id_ecdsa
+#   IdentityFile ~/.ssh/id_ed25519
+#   Port 22
+#   Protocol 2
+#   Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
+#   MACs hmac-md5,hmac-sha1,umac-64@openssh.com
+#   EscapeChar ~
+#   Tunnel no
+#   TunnelDevice any:any
+#   PermitLocalCommand no
+#   VisualHostKey no
+#   ProxyCommand ssh -q -W %h:%p gateway.example.com
+#   RekeyLimit 1G 1h
+    SendEnv LANG LC_*
+    HashKnownHosts yes
+    GSSAPIAuthentication yes
+
+
+# lsof -i -P
+postgres  26485 gitlab-psql    6u  IPv6   15859      0t0  UDP localhost:59181->localhost:59181 
+sshd      30802        root    3u  IPv4 8772847      0t0  TCP LogServer:22->redmagic:59450 (ESTABLISHED)
+sshd      30813          pi    3u  IPv4 8772847      0t0  TCP LogServer:22->redmagic:59450 (ESTABLISHED)
+
+
+
+
+[07:56:55.233] Log Level: 2
+[07:56:55.235] remote-ssh@0.65.8
+[07:56:55.235] darwin x64
+[07:56:55.236] SSH Resolver called for "ssh-remote+7b22686f73744e616d65223a227069404c6f67536572766572227d", attempt 1
+[07:56:55.236] "remote.SSH.useLocalServer": true
+[07:56:55.236] "remote.SSH.path": undefined
+[07:56:55.236] "remote.SSH.configFile": undefined
+[07:56:55.236] "remote.SSH.useFlock": true
+[07:56:55.236] "remote.SSH.lockfilesInTmp": false
+[07:56:55.237] "remote.SSH.localServerDownload": auto
+[07:56:55.237] "remote.SSH.remoteServerListenOnSocket": false
+[07:56:55.237] "remote.SSH.showLoginTerminal": false
+[07:56:55.237] "remote.SSH.defaultExtensions": []
+[07:56:55.237] "remote.SSH.loglevel": 2
+[07:56:55.237] SSH Resolver called for host: pi@LogServer
+[07:56:55.237] Setting up SSH remote "pi@LogServer"
+[07:56:55.240] Acquiring local install lock: /var/folders/qd/76nvpl2j16b5znmvybsrfptr0000gn/T/vscode-remote-ssh-48f5c6df-install.lock
+[07:56:55.251] Looking for existing server data file at /Users/hashimoto/Library/Application Support/Code/User/globalStorage/ms-vscode-remote.remote-ssh/vscode-ssh-host-48f5c6df-7f6ab5485bbc008386c4386d08766667e155244e-0.65.8/data.json
+[07:56:55.252] Using commit id "7f6ab5485bbc008386c4386d08766667e155244e" and quality "stable" for server
+[07:56:55.256] Install and start server if needed
+[07:56:55.260] PATH: /Users/hashimoto/.pyenv/shims:/bin:/Users/hashimoto/anaconda3/bin:/Users/hashimoto/anaconda3/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+[07:56:55.261] Checking ssh with "ssh -V"
+[07:56:55.276] > OpenSSH_7.8p1, LibreSSL 2.6.2
+
+[07:56:55.280] askpass server listening on /var/folders/qd/76nvpl2j16b5znmvybsrfptr0000gn/T/vscode-ssh-askpass-21fd3827811c66dcb498127cf46a6e95dcf10cd9.sock
+[07:56:55.280] Spawning local server with {"serverId":1,"ipcHandlePath":"/var/folders/qd/76nvpl2j16b5znmvybsrfptr0000gn/T/vscode-ssh-askpass-5ea53c18d2b1641d1a6f9587cd887a48d197f552.sock","sshCommand":"ssh","sshArgs":["-v","-T","-D","59541","-o","ConnectTimeout=15","pi@LogServer"],"dataFilePath":"/Users/hashimoto/Library/Application Support/Code/User/globalStorage/ms-vscode-remote.remote-ssh/vscode-ssh-host-48f5c6df-7f6ab5485bbc008386c4386d08766667e155244e-0.65.8/data.json"}
+[07:56:55.280] Local server env: {"DISPLAY":"1","ELECTRON_RUN_AS_NODE":"1","SSH_ASKPASS":"/Users/hashimoto/.vscode/extensions/ms-vscode-remote.remote-ssh-0.65.8/out/local-server/askpass.sh","VSCODE_SSH_ASKPASS_NODE":"/Users/hashimoto/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Renderer).app/Contents/MacOS/Code Helper (Renderer)","VSCODE_SSH_ASKPASS_MAIN":"/Users/hashimoto/.vscode/extensions/ms-vscode-remote.remote-ssh-0.65.8/out/askpass-main.js","VSCODE_SSH_ASKPASS_HANDLE":"/var/folders/qd/76nvpl2j16b5znmvybsrfptr0000gn/T/vscode-ssh-askpass-21fd3827811c66dcb498127cf46a6e95dcf10cd9.sock"}
+[07:56:55.285] Spawned 46704
+[07:56:55.400] > local-server-1> Spawned ssh, pid=46710
+[07:56:55.411] stderr> OpenSSH_7.8p1, LibreSSL 2.6.2
+[07:56:55.537] stderr> debug1: Server host key: ecdsa-sha2-nistp256 SHA256:i2SkZvYzRZPfdMjP4GnwIBV9781DYoxVVcyQdxTtRxs
+[07:56:55.701] Got askpass request: {"request":"pi@logserver's password:"}
+[07:56:55.707] Showing password prompt
+[07:56:55.709] Listening for interwindow password on /var/folders/qd/76nvpl2j16b5znmvybsrfptr0000gn/T/vscode-ssh-askpass-f3a94851b9704a7b1898071b2a6dd36dff022e06.sock
+[07:56:55.709] Writing password prompt to globalState
+[07:57:02.228] Got password response
+[07:57:02.229] Interactor gave response: *********
+[07:57:02.229] Cleaning up other-window auth server
+[07:57:02.329] stderr> Authenticated to logserver ([192.168.0.103]:22).
+[07:57:02.442] > Linux LogServer 5.4.72-v7+ #1356 SMP Thu Oct 22 13:56:54 BST 2020 armv7l
+> 
+> The programs included with the Debian GNU/Linux system are free software;
+> the exact distribution terms for each program are described in the
+> individual files in /usr/share/doc/*/copyright.
+> 
+> Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+> permitted by applicable law.
+[07:57:02.512] stderr> script: cannot open /LogServer/history/pi_20211011075702.log: そのようなファイルやディレクトリはありません
+[07:57:02.512] stderr> Transferred: sent 1820, received 2912 bytes, in 0.2 seconds
+[07:57:02.512] stderr> Bytes per second: sent 10170.6, received 16272.9
+[07:57:02.513] > Script started, file is /LogServer/history/pi_20211011075702.log
+[07:57:02.513] > local-server-1> ssh child died, shutting down
+[07:57:02.519] Local server exit: 0
+[07:57:02.520] Received install output: local-server-1> Spawned ssh, pid=46710
+OpenSSH_7.8p1, LibreSSL 2.6.2
+debug1: Server host key: ecdsa-sha2-nistp256 SHA256:i2SkZvYzRZPfdMjP4GnwIBV9781DYoxVVcyQdxTtRxs
+Authenticated to logserver ([192.168.0.103]:22).
+Linux LogServer 5.4.72-v7+ #1356 SMP Thu Oct 22 13:56:54 BST 2020 armv7l
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+script: cannot open /LogServer/history/pi_20211011075702.log: そのようなファイルやディレクトリはありません
+Transferred: sent 1820, received 2912 bytes, in 0.2 seconds
+Bytes per second: sent 10170.6, received 16272.9
+Script started, file is /LogServer/history/pi_20211011075702.log
+local-server-1> ssh child died, shutting down
+
+[07:57:02.521] Failed to parse remote port from server output
+[07:57:02.522] Resolver error: Error: 
+	at Function.Create (/Users/hashimoto/.vscode/extensions/ms-vscode-remote.remote-ssh-0.65.8/out/extension.js:1:397041)
+	at Object.t.handleInstallOutput (/Users/hashimoto/.vscode/extensions/ms-vscode-remote.remote-ssh-0.65.8/out/extension.js:1:395684)
+	at Object.e [as tryInstallWithLocalServer] (/Users/hashimoto/.vscode/extensions/ms-vscode-remote.remote-ssh-0.65.8/out/extension.js:1:435292)
+	at processTicksAndRejections (internal/process/task_queues.js:93:5)
+	at async /Users/hashimoto/.vscode/extensions/ms-vscode-remote.remote-ssh-0.65.8/out/extension.js:1:452665
+	at async Object.t.withShowDetailsEvent (/Users/hashimoto/.vscode/extensions/ms-vscode-remote.remote-ssh-0.65.8/out/extension.js:1:456460)
+	at async /Users/hashimoto/.vscode/extensions/ms-vscode-remote.remote-ssh-0.65.8/out/extension.js:1:433816
+	at async C (/Users/hashimoto/.vscode/extensions/ms-vscode-remote.remote-ssh-0.65.8/out/extension.js:1:430392)
+	at async Object.t.resolveWithLocalServer (/Users/hashimoto/.vscode/extensions/ms-vscode-remote.remote-ssh-0.65.8/out/extension.js:1:433431)
+	at async Object.t.resolve (/Users/hashimoto/.vscode/extensions/ms-vscode-remote.remote-ssh-0.65.8/out/extension.js:1:454065)
+	at async /Users/hashimoto/.vscode/extensions/ms-vscode-remote.remote-ssh-0.65.8/out/extension.js:1:526942
+[07:57:02.527] ------
+
+
+
+
