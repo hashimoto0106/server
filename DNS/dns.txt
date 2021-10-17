@@ -22,3 +22,29 @@ https://kenken92.synology.me/wordpress/synology/1681.html
 なぜredmagicは設定しただけで、win10が認識したのか
 各マシンのホスト名を設定したら/etc/hostsのような定義は不要にできるのではないか
 
+====================================================================-
+
+Linuxで名前解決を行う仕組み
+以下では、Linuxでどのように名前解決が行われているのかを明らかにするために、名前解決に関連するファイルをまとめた。
+
+大まかな名前解決の流れは、以下の通り。
+
+リゾルバ(resolver)がnsswitch.confで名前解決の順序を確認
+　　　　　　　　　　　　　↓
+指定された順番通りにファイル/サーバの内容をチェックする
+
+/etc/nsswitch.conf
+nssとは、Name Service Switchの略。resolver（名前解決をするソフトウェア）が使用する設定ファイルで、名前解決に使用
+
+
+https://tyru.hatenablog.com/entry/20110726/ldap_hosts
+サーバ台数が増えてくると/etc/hostsいじってssh hogeで接続するのがめんどくなる。
+hostsが古くて別のサーバに接続してしまったり...
+それにIP直指定は長いし、ホスト名だとzshの補完がきく。
+
+
+NISとかNIS+とかLDAP使えばhostsの共有ができる。
+
+
+
+

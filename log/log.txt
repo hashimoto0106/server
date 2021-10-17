@@ -64,7 +64,7 @@ historylogをlogrotate対象とする
 
 -----------------log 共通化--------------------
 sudo vi ~/.bash_profile
-export NAS_LOG_PATH=/mnt/synology/Log
+export NAS_LOG_PATH=/mnt/synology/Log/$(hostname)
 export NAS_CONFIG_PATH=/mnt/synology/Computer/config
 source ~/.bash_profile
 printenv
@@ -80,13 +80,13 @@ sudo logrotate -fv /etc/logrotate.conf
 
 
 -----------------config 共通化--------------------
+/etc/bash.bashrcにて共通configを呼び出す設定をする
 .bash_history
 .bash_logout
 .bash_profile
 .bashrc
 .profile
 
-vi
 
 /mnt/synology/Computer/config/.bash_aliases
 /mnt/synology/Computer/config/.bash_export
