@@ -52,10 +52,16 @@ drwxr-xr-x  2 root  root     4.0K  9月 20  2020 unattended-upgrades/        [sy
 
 [my app]
 
+
+---------------------------------問題点-----------------------------------------
+pi@LogServer:~ $ rsyslogd -N 1
+rsyslogd: version 8.1901.0, config validation run (level 1), master config /etc/rsyslog.conf
+rsyslogd: Invalid protocol 'all' in allowed sender list, line ignored [v8.1901.0]
+rsyslogd: invalid or yet-unknown config file command 'NAS_LOG_PATH/system/auth.log' - have you forgotten to load a module? [v8.1901.0 try https://www.rsyslog.com/e/3003 ]
+
+
 ・システム起動時などのカーネルログdmesgがない
-・システムの汎用のログsyslogがない
-・kern.logがない
-・service mail,cronログしか残っていない
+
 
 
 historylogをlogrotate対象とする
@@ -71,6 +77,7 @@ printenv
 export
 
 sudo vi /etc/rsyslog.conf
+rsyslogd -N 1
 sudo systemctl restart rsyslog
 cd /etc/logrotate.d
 sudo vi /etc/logrotate.d/*********
