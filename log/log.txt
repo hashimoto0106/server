@@ -91,6 +91,7 @@ sudo logrotate -fv /etc/logrotate.conf
 /mnt/synology/Computer/config/.bash_aliases
 /mnt/synology/Computer/config/.bash_export
 NG なぜか３秒周期で実行される /mnt/synology/Computer/config/.bash_profile
+-->>script実行により.bashが再実行されているかも
 NG /mnt/synology/Computer/config/hosts
 
 1. /etc/profile
