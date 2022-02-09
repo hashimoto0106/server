@@ -59,6 +59,8 @@ rsyslogd: version 8.1901.0, config validation run (level 1), master config /etc/
 rsyslogd: Invalid protocol 'all' in allowed sender list, line ignored [v8.1901.0]
 rsyslogd: invalid or yet-unknown config file command 'NAS_LOG_PATH/system/auth.log' - have you forgotten to load a module? [v8.1901.0 try https://www.rsyslog.com/e/3003 ]
 
+rsyslog.confには環境変数$NAS_CONFIG_PATHは指定できない
+・・・templateを利用すれば可能かもしれない
 
 ・システム起動時などのカーネルログdmesgがない
 
