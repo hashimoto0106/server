@@ -1,4 +1,22 @@
 
+掲示板解析
+・最弱代表はどこだ
+http://medaka.5ch.net/test/read.cgi/hsb/1646416267/l50
+
+・甲子園へ行こう
+http://medaka.5ch.net/test/read.cgi/hsb/1646820810/l50
+
+・ベスト8予想
+http://medaka.5ch.net/test/read.cgi/hsb/1646389293/l50
+
+・組合せ抽選会
+http://medaka.5ch.net/test/read.cgi/hsb/1627767817/l50
+
+・過去ログ倉庫
+http://medaka.5ch.net/hsb/kako/kako0000.html
+
+
+
 web化
 ・map
 ・database
